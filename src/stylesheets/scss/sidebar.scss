@@ -1,0 +1,58 @@
+/* SIDEBAR */
+
+$color: #ddd;
+$background: rgb(105, 105, 105);
+$backgroundHover: rgb(170, 85, 250);
+
+div.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30%;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+div.menu {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+}
+
+button.menuItem {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 16px;
+  color: $color;
+  background-color: transparent;
+  height: 40px;
+  padding: 0 30px;
+  
+  &:hover {
+    background-color: $backgroundHover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  & div:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    padding: 0;
+  }
+
+}
+

@@ -1,0 +1,51 @@
+/* LAYOUT */
+/* colors */
+main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: 50px 1fr 100px;
+  grid-template-areas: "header  header  header" "sidebar content content" "footer  footer  footer"; }
+  @media only screen and (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 30px 1fr auto 0;
+      grid-template-areas: "header" "content" "sidebar" "footer"; } }
+
+section.header {
+  color: #ddd;
+  grid-area: header;
+  background-color: #3b1c85; }
+  @media only screen and (max-width: 768px) {
+    section.header {
+      position: fixed;
+      height: 30px;
+      width: 100%; } }
+
+section.sidebar {
+  color: #ddd;
+  grid-area: sidebar;
+  background-color: #4f1c85; }
+  @media only screen and (max-width: 768px) {
+    section.sidebar {
+      position: fixed;
+      bottom: 0;
+      width: 100%; } }
+
+section.content {
+  color: #ddd;
+  grid-area: content;
+  background-color: #631c85; }
+
+section.footer {
+  color: #ddd;
+  grid-area: footer;
+  background-color: #771c85;
+  overflow: hidden; }
+
+/*# sourceMappingURL=layout.css.map */

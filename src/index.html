@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <title>CSS Responsive Grid Layout</title>
+  </head>
+  <body>
+    <main>
+      <section id="header" class="header">
+        <div class="header-container">
+          <h1 class="logo">Company</h1>
+        </div>
+      </section>
+      <section class="content">
+        <div id="content" class="content-container" />
+      </section>
+      <section class="footer">
+        <div class="footer-container" >
+          <h1>Footer</h1>
+        </div>
+      </section>
+      <section class="sidebar">
+        <div class="sidebar-container">
+          <div class="menu">
+            <button class="menuItem">
+              <div><i class="material-icons">home</i></div>
+              <div><p class="content">Home</p></div>
+            </button>
+            <button class="menuItem">
+              <div><i class="material-icons">work</i></div>
+              <div><p class="content">Work</p></div>
+            </button>
+            <button class="menuItem">
+              <div><i class="material-icons">settings</i></div>
+              <div><p class="content">Settings</p></div>
+            </button>
+          </div>
+        </div>
+      </section>        
+      <script>
+        for(var i = 0; i < 60; i++ ) {
+          var div = document.createElement("div");
+          div.className = 'box';
+          div.innerHTML = 'Box';
+          document.getElementById("content").appendChild(div);
+        }
+      </script>   
+    </main>
+  </body>
+</html>
